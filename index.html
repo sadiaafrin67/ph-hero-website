@@ -1,15 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PH</title>
-</head>
-<body>
-    <header></header>
 
-    <main></main>
+    <script src="https://kit.fontawesome.com/f494bafbd6.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+</style>
+
+</head>
+
+<body class="font-inter container mx-auto">
+    <header>
+        <!-- navbar start -->
+        <div class="navbar bg-base-100 my-8">
+            <div class="navbar-start">
+
+               <img src="./photos/Logo.png" alt="" srcset="">
+
+            </div>
+
+            <div class="navbar-center hidden md:block">
+                <button class="btn btn-neutral rounded bg-gray-300 text-black border-none hover:bg-slate-500 capitalize ">Sort by view</button>
+            </div>
+
+            <div class="navbar-end">
+                 <a href="/blog.html"><button  class="btn btn-primary rounded bg-[#FF1F3D] text-white border-none hover:bg-red-700 capitalize">Blog</button></a>
+            </div>
+          </div>
+          <hr class="mb-8">
+    </header>
+
+    <main>
+        <section>
+            <div id="tab-container" class="tabs flex text-center justify-center m-auto  gap-4 mb-8">
+            </div>
+        </section>
+
+        <section>
+            <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            </div>
+        </section>
+
+        <section>
+            <div id="no-data" class="hidden">
+               
+            </div>
+        </section>
+
+        
+    </main>
 
     <script src="index.js"></script>
 </body>
 </html>
+
+ 
