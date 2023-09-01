@@ -21,6 +21,7 @@ const handleCategorys = async () => {
 
 const handleShowCategories = async (id='1000') => {
   video = id;
+
   // console.log(video);
 
     const res = await fetch(` https://openapi.programming-hero.com/api/videos/category/${id}`)
@@ -33,12 +34,13 @@ const handleShowCategories = async (id='1000') => {
 
 const showTheDataAgain = (validData) => {
   
-  console.log(validData);
+  // console.log(validData);
 
   const cardContainer = document.getElementById('card-container')
   cardContainer.textContent = ''
 
   validData.forEach((utub) => {
+
   //  console.log(utub);
 
 
@@ -170,7 +172,8 @@ const handleShowCategoriestwo = async () => {
 
     return secondSlice - firstSlice;
   });
-  console.log(sortData);
+
+  // console.log(sortData);
 
   showTheDataAgain(sortData)
 
